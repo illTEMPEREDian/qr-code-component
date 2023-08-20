@@ -33,6 +33,7 @@
 
 /* Typography */
 body {
+  font-size: var(--fs-base);
   font-family: var(--ff-base);
   line-height: var(--lh-base);
   color: var(--clr-gr-blue);
