@@ -1,0 +1,115 @@
+/* Variables */
+* {
+  /* Colors */
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grey: hsl(212, 45%, 89%);
+  --clr-gr-blue: hsl(220, 15%, 55%);
+  --clr-dk-blue: hsl(218, 44%, 22%);
+
+  /* Font sizes */
+  --fs-base: 0.938rem;
+  --fs-large: 1.375rem;
+
+  /* Font family */
+  --ff-base: "Outfit", sans-serif;
+
+  /* Font weight */
+  --fw-normal: 400;
+  --fw-medium: 500; /* Consider adding a medium font weight */
+  --fw-bold: 700;
+
+  /* Line height */
+  --lh-base: 1.188rem;
+  --lh-large: 1.75rem;
+}
+
+/* Reset Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Typography */
+body {
+  font-family: var(--ff-base);
+  line-height: var(--lh-base);
+  color: var(--clr-gr-blue);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Media */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Form Elements */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Text Overflow */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Stacking Context */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* General Styling */
+.wrapper {
+  display: grid;
+  place-content: center;
+  background: var(--clr-grey);
+  height: 100vh;
+  width: 100%;
+}
+
+.card {
+  background: var(--clr-white);
+  width: 20rem;
+  padding: 1rem 1rem 2.5rem;
+  border-radius: 1.25rem;
+
+  .image-container {
+    margin-bottom: 1.5rem;
+    .main-image {
+    height: 18rem;
+    border-radius: 0.625rem;
+    }
+  }
+
+  .content {
+    text-align: center;
+    padding-inline: 1rem;
+
+    .title {
+        font-size: var(--fs-large);
+        line-height: var(--lh-large);
+        font-weight: var(--fw-bold);
+        color: var(--clr-dk-blue);
+        margin-bottom: 1rem;
+    }
+    .copy {
+
+    }
+  }
+}
